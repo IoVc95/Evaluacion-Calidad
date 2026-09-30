@@ -2,8 +2,7 @@ import os
 import sys
 
 def process_user_data(n, a, e):
-    temp_status = "active"
-    
+        
     if a < 18:
         return "Error: El usuario es menor de edad"
     else:
@@ -16,5 +15,5 @@ def process_user_data(n, a, e):
                 else:
                     # print("Usuario registrado correctamente")
                     return f"Éxito: {n} registrado correctamente"
-            except Exception as ex:
+            except Exception:
                 return "Error: Algo salió mal en el sistema"
